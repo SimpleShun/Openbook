@@ -1,0 +1,11 @@
+{
+  "name": "openbook",
+  "version": "1.0.0",
+  "description": "***Made by college Students***  --- Just a thing that parses a csv file to then dynamically create api routes that link to the requested file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
