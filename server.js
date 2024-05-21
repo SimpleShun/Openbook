@@ -1,6 +1,5 @@
-import router from './things/items/items_router.js'
-const router = require('./things/items/items_router.js')
-const express = require("express")
+import { router } from './things/items/items_router.js'
+import express from 'express';
 const port = 5000;
 const app = express()
 
@@ -10,7 +9,7 @@ app.use('/', express.static('public'))
 app.use('/api/things', router);
 //
 
-const start = () => {
+export const start = () => {
 	try {
 		app.listen(port, () => {
 			console.log(`Listening to port ${port}`)
@@ -19,6 +18,3 @@ const start = () => {
 		console.error(error)
 	}
 }
-
-module.exports = { start }
-
