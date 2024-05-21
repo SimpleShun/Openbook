@@ -4,8 +4,13 @@
   "description": "***Made by college Students***  --- Just a thing that parses a csv file to then dynamically create api routes that link to the requested file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "express": "^4.19.2"
+  }
 }
