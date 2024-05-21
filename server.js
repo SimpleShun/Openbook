@@ -1,9 +1,13 @@
+import router from './things/items/items_router.js'
+const router = require('./things/items/items_router.js')
 const express = require("express")
 const port = 5000;
 const app = express()
 
 //routes goes here
-app.get('/', express.static('public'))
+app.use('/', express.static('public'))
+
+app.use('/api/things', router);
 //
 
 const start = () => {
