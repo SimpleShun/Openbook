@@ -3,4 +3,7 @@
 ---
 Just a thing that parses a csv file to then dynamically create api routes that link to the requested file
 
-
+```javascript
+npm install
+npm start
+```
