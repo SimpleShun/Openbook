@@ -1,10 +1,9 @@
 import fs from 'fs'
 import { parse } from 'csv-parse'
 
-const path = import.meta.dirname.concat('/pg_catalog.csv')
 export default async function csv_parser(id) {
 	let records = {}
-	const parsed = fs.createReadStream(path)
+	const parsed = fs.createReadStream('./things/csv/pg_catalog.csv')
 		.pipe(parse());
 	for await (const record of parsed) {
 		if (record[0] == id) {
